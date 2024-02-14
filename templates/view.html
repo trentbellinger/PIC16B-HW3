@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+{% extends 'base.html' %}
+   <body>
+
+      {% block header %}
+         <h2>Some Cool Messages</h2>
+      {% endblock %}
+         
+      {% block content %}
+         {% if messages %}
+            <p>
+               {% for message in messages %}
+                  <p>
+                     <br><strong>"{{message[1]}}"</strong></br>
+                     <i>-{{message[0]}}</i>
+                  </p>
+               {% endfor %}
+            </p>
+         {% else %}
+            <p>No messages available.</p>
+         {% endif %}      
+      {% endblock %}
+
+      </form>
+
+   </body>
+</html>

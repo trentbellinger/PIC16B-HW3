@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+{% extends 'base.html' %}
+   <body>
+         
+      {% block header %}
+         <h2>Submit</h2>
+      {% endblock %}
+      {% block content %}
+         <form action = "{{ url_for('render_submit_template') }}" method = "POST">
+
+            Your message:<br>
+            <input type = "text" name = "message" id = "message" /></br>
+
+            Your name or handle:<br>
+            <input type = "text" name = "handle" id = "handle" /></br>
+
+            <input type = "submit" value = "Submit message" /><br>
+         </form>
+         
+         <h3>{{ msg }}</h3>
+      {% endblock %}
+
+   </body>
+</html>
