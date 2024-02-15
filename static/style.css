@@ -9,13 +9,6 @@ body {
     margin: 0 auto;
 }
 
-h1 {
-    color: lightblue;
-    font-family: "Gill Sans", sans-ser;
-    margin: 1rem 0;
-    text-align: center;
-}
-
 a {
     color: CornflowerBlue;
     font-family: cursive;
@@ -23,7 +16,7 @@ a {
 }
 
 nav {
-    displyy: block;
+    display: block;
     background: lightgray;
     padding: 0.25 0.25rem;
     border-radius: 10px;
